@@ -63,7 +63,7 @@ app.get(
   }
 );
 
-app.listen(port, async () => {
+app.listen(process.env.PORT, "0.0.0.0", async () => {
   try {
     await connection;
     console.log("database connected");
